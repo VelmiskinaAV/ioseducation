@@ -1,0 +1,6 @@
+framework module Pods_iOSMobileArchitecture {
+  umbrella header "Pods-iOSMobileArchitecture-umbrella.h"
+
+  export *
+  module * { export * }
+}
