@@ -19,7 +19,7 @@ class TaskTwoViewController: UIViewController {
             label.text = table.returnMessage()
         } else if textField.text?.lowercased().trimmingCharacters(in: .whitespaces) == "стул" {
             let chair = ChairElement()
-            label.text = chair.returnMessage()
+            label.text = chair.returnMessage() 
         } else {
             label.text = "Некорректный ввод"
         }
