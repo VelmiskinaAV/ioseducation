@@ -17,20 +17,26 @@ class TaskThreePartOneViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = """
-                        \(persone.returnFIO())
-                        \(persone.returbDate())
-                        \(persone.returnAdress())
-                        \(persone.returnPhoneNumber())
-                        \(persone.returnTodayDate())
-                    """
+        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartThree") as! TaskThreePartThreeViewController
+        vc.completionHandler = { persone in
+        
+            self.label.text = """
+            \(persone?.returnFIO() ?? "")
+            \(persone?.returbDate() ?? "")
+            \(persone?.returnAdress() ?? "")
+            \(persone?.returnPhoneNumber() ?? "")
+            \(persone?.returnTodayDate() ?? "")
+            """        
     }
+    present(vc, animated: true, completion: nil)
+}
     
     @IBAction func secondScreenButton(_ sender: Any) {
        
     }
     @IBAction func thirdScreenButton(_ sender: Any) {
-        
+     
     }
     
 }

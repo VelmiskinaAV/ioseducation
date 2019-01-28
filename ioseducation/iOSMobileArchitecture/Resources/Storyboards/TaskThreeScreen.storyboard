@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P9j-P0-s8k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P9j-P0-s8k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Task Three Part One View Controller-->
         <scene sceneID="Pwh-wC-znp">
             <objects>
-                <viewController id="P9j-P0-s8k" customClass="TaskThreePartOneViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskThreePartOne" id="P9j-P0-s8k" customClass="TaskThreePartOneViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugk-LC-Mg1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,7 @@
                                 <state key="normal" title="Second Screen"/>
                                 <connections>
                                     <action selector="secondScreenButton:" destination="P9j-P0-s8k" eventType="touchUpInside" id="kQe-ut-laQ"/>
+                                    <segue destination="DUA-n6-9is" kind="show" id="XRC-cY-VFl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEQ-pF-v2i">
@@ -36,6 +37,7 @@
                                 <state key="normal" title="Third Screen"/>
                                 <connections>
                                     <action selector="thirdScreenButton:" destination="P9j-P0-s8k" eventType="touchUpInside" id="azY-UO-PgH"/>
+                                    <segue destination="R9F-rC-tln" kind="show" id="71B-uS-g7R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,12 +60,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWO-Vz-rGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495.19999999999999" y="19.340329835082461"/>
+            <point key="canvasLocation" x="-495" y="19"/>
         </scene>
         <!--Task Three Part Two View Controller-->
         <scene sceneID="7XU-yl-Rpa">
             <objects>
-                <viewController id="DUA-n6-9is" customClass="TaskThreePartTwoViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskThreePartTwo" id="DUA-n6-9is" customClass="TaskThreePartTwoViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9v-PH-4e1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +182,7 @@
         <!--Task Three Part Three View Controller-->
         <scene sceneID="8PG-iQ-MuW">
             <objects>
-                <viewController id="R9F-rC-tln" customClass="TaskThreePartThreeViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskThreePartThree" id="R9F-rC-tln" customClass="TaskThreePartThreeViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEO-CS-dIr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

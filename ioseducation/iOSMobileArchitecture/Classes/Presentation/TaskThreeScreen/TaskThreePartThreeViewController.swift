@@ -17,6 +17,8 @@ class TaskThreePartThreeViewController : UIViewController {
     @IBOutlet weak var textFieldTodayDate: UITextField!
     
     var oldPersone = HandingCustomerData()
+       var completionHandler:(((HandingCustomerData)?) -> ())?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +29,24 @@ class TaskThreePartThreeViewController : UIViewController {
         textFieldPhoneNumber.text = "\(oldPersone.returnPhoneNumber())"
         textFieldTodayDate.text = "\(oldPersone.returnTodayDate())"
     }
-    
+ 
+
     var persone = CustomerData()
     @IBAction func changeScreenButton(_ sender: Any) {
+
         persone.fio = textFieldFIO.text
         persone.date = textFieldDate.text
         persone.adress = textFieldAdress.text
         persone.phoneNumber = textFieldPhoneNumber.text
         persone.todayDate = textFieldTodayDate.text
+        
+        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartOne") as! TaskThreePartOneViewController
+        // ??
+        
+        
+        
+        present(vc, animated: true, completion: nil)
     }
+ 
 }
