@@ -8,9 +8,9 @@
 
 class HandingCustomerData {
     
-    var persone = CustomerData()
+    var persone: CustomerData
     
-    func returnFIO()->String {
+    func returnFIO() -> String {
         return "\(persone.fio ?? "")"
      }
      func returbDate()->String {
@@ -19,10 +19,14 @@ class HandingCustomerData {
      func returnAdress()->String {
         return "\(persone.adress ?? "")"
      }
-     func returnPhoneNumber()->String {
+    func returnPhoneNumber()->String {
         return "\(persone.phoneNumber ?? "")"
      }
     func returnTodayDate()->String {
         return "\(persone.todayDate ?? "")"
+    }
+
+    init(data: CustomerData? = nil) {
+        self.persone = data ?? CustomerData()
     }
 }

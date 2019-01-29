@@ -19,6 +19,8 @@
 		96B0E7AA21AFFB34001AD6FF /* TaskThree in Resources */ = {isa = PBXBuildFile; fileRef = 96B0E7A921AFFB34001AD6FF /* TaskThree */; };
 		96B0E7AD21B0086D001AD6FF /* TaskFour in Resources */ = {isa = PBXBuildFile; fileRef = 96B0E7AC21B0086D001AD6FF /* TaskFour */; };
 		96B0E7B021B00CAF001AD6FF /* TaskFive in Resources */ = {isa = PBXBuildFile; fileRef = 96B0E7AF21B00CAF001AD6FF /* TaskFive */; };
+		CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE731D352200A04B00B08E68 /* ButtonDelegate.swift */; };
+		CE731D382200A1C200B08E68 /* TextWithSecondButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE731D372200A1C200B08E68 /* TextWithSecondButton.swift */; };
 		FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */; };
 		FACF29BB21CA6FEF00492B35 /* TaskOneScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */; };
 		FACF29BF21CA895200492B35 /* TaskTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */; };
@@ -49,6 +51,8 @@
 		96B0E7A921AFFB34001AD6FF /* TaskThree */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskThree; sourceTree = "<group>"; };
 		96B0E7AC21B0086D001AD6FF /* TaskFour */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskFour; sourceTree = "<group>"; };
 		96B0E7AF21B00CAF001AD6FF /* TaskFive */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskFive; sourceTree = "<group>"; };
+		CE731D352200A04B00B08E68 /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
+		CE731D372200A1C200B08E68 /* TextWithSecondButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithSecondButton.swift; sourceTree = "<group>"; };
 		FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOneViewController.swift; sourceTree = "<group>"; };
 		FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskOneScreen.storyboard; sourceTree = "<group>"; };
 		FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				FAF9D5AF21CD058B00F34E3C /* TaskThreePartThreeViewController.swift */,
 				FAF9D5B121CD067400F34E3C /* CustomerData.swift */,
 				FAF9D5B521CD11E000F34E3C /* HandingCustomerData.swift */,
+				CE731D352200A04B00B08E68 /* ButtonDelegate.swift */,
+				CE731D372200A1C200B08E68 /* TextWithSecondButton.swift */,
 			);
 			path = TaskThreeScreen;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 				FAF9D5B021CD058B00F34E3C /* TaskThreePartThreeViewController.swift in Sources */,
 				FACF29C521CA8C0800492B35 /* ChairElement.swift in Sources */,
 				FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */,
+				CE731D382200A1C200B08E68 /* TextWithSecondButton.swift in Sources */,
 				FAF9D5AC21CD054A00F34E3C /* TaskThreePartOneViewController.swift in Sources */,
 				FAF9D5B621CD11E000F34E3C /* HandingCustomerData.swift in Sources */,
+				CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */,
 				9609993121998CAB006B6D62 /* AppDelegate.swift in Sources */,
 				FACF29C721CA8C4200492B35 /* FurnitureProtocol.swift in Sources */,
 				FAF9D5AE21CD057200F34E3C /* TaskThreePartTwoViewController.swift in Sources */,

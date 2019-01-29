@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TaskThreePartTwoViewController : UIViewController {
+class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
+  
     
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
@@ -30,12 +31,20 @@ class TaskThreePartTwoViewController : UIViewController {
     
     var persone = CustomerData()
     
-    @IBAction func changeScreenButton(_ sender: Any) {
+    func onButtonTap(sender: UIButton) {
         persone.fio = textFieldFIO.text
         persone.date = textFieldDate.text
         persone.adress = textFieldAdress.text
         persone.phoneNumber = textFieldPhoneNumber.text
         persone.todayDate = textFieldTodayDate.text
     }
+    
+    
+    @IBAction func changeScreenButton(_ sender: Any) {
+      
+        navigationController?.popViewController(animated: true)
+    }
+    
+    //передать значения на 2 экран, разобраться с содержимым func onButtonTap(sender: UIButton) и передать значения со 2 экрана
     
 }

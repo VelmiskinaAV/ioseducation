@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P9j-P0-s8k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="weu-uD-cvR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,25 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E37-Cx-pyS">
-                                <rect key="frame" x="20" y="60" width="335" height="0.0"/>
+                                <rect key="frame" x="20" y="104" width="335" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-nE-gYE">
-                                <rect key="frame" x="40" y="100" width="46" height="30"/>
+                                <rect key="frame" x="40" y="144" width="46" height="30"/>
                                 <state key="normal" title="Second Screen"/>
                                 <connections>
                                     <action selector="secondScreenButton:" destination="P9j-P0-s8k" eventType="touchUpInside" id="kQe-ut-laQ"/>
-                                    <segue destination="DUA-n6-9is" kind="show" id="XRC-cY-VFl"/>
+                                    <segue destination="DUA-n6-9is" kind="show" id="hfB-ay-eSX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEQ-pF-v2i">
-                                <rect key="frame" x="256" y="100" width="46" height="30"/>
+                                <rect key="frame" x="256" y="144" width="46" height="30"/>
                                 <state key="normal" title="Third Screen"/>
                                 <connections>
                                     <action selector="thirdScreenButton:" destination="P9j-P0-s8k" eventType="touchUpInside" id="azY-UO-PgH"/>
-                                    <segue destination="R9F-rC-tln" kind="show" id="71B-uS-g7R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,13 +54,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oS5-5H-yPQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Spl-LV-qwX"/>
                     <connections>
                         <outlet property="label" destination="E37-Cx-pyS" id="ScJ-9P-GUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWO-Vz-rGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="19"/>
+            <point key="canvasLocation" x="98" y="-737"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gmn-Ws-jjO">
+            <objects>
+                <navigationController id="weu-uD-cvR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qxr-AA-tHR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="P9j-P0-s8k" kind="relationship" relationship="rootViewController" id="3ez-Zp-feo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7u-uz-fqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="-606"/>
         </scene>
         <!--Task Three Part Two View Controller-->
         <scene sceneID="7XU-yl-Rpa">
@@ -86,6 +103,7 @@
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-J2-Op1">
                                         <rect key="frame" x="30" y="30" width="315" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="SKq-vc-adT"/>
                                             <constraint firstAttribute="height" constant="30" id="WUP-ag-wai"/>
@@ -97,6 +115,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Blf-AR-YDR">
                                         <rect key="frame" x="30" y="150" width="315" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="g8Z-GR-a31"/>
                                         </constraints>
@@ -106,6 +125,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-bE-2jK">
                                         <rect key="frame" x="30" y="210" width="315" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="HVh-lY-hrx"/>
                                         </constraints>
@@ -115,6 +135,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7Y-Pr-BIc">
                                         <rect key="frame" x="30" y="270" width="315" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="TMQ-su-H5X"/>
                                         </constraints>
@@ -124,6 +145,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaz-mo-Svh">
                                         <rect key="frame" x="30" y="90" width="315" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="OfZ-ks-nsN"/>
                                         </constraints>
@@ -177,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRs-IB-t4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="20"/>
+            <point key="canvasLocation" x="198" y="18"/>
         </scene>
         <!--Task Three Part Three View Controller-->
         <scene sceneID="8PG-iQ-MuW">
@@ -203,6 +225,7 @@
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAW-2K-sJ8">
                                         <rect key="frame" x="30" y="30" width="315" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="dl2-xH-Sfr"/>
                                         </constraints>
@@ -212,6 +235,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFK-6k-bbE">
                                         <rect key="frame" x="30" y="90" width="315" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="pbs-Fc-Lba"/>
                                         </constraints>
@@ -221,6 +245,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Omv-QV-FAG">
                                         <rect key="frame" x="30" y="150" width="315" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="qxw-lz-xRB"/>
                                         </constraints>
@@ -230,6 +255,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-lc-zxQ">
                                         <rect key="frame" x="30" y="210" width="315" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="qp3-av-1yK"/>
                                         </constraints>
@@ -239,6 +265,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-jJ-LhW">
                                         <rect key="frame" x="30" y="270" width="315" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="rXE-J1-cCg"/>
                                         </constraints>
@@ -289,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahI-ma-Ppg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="19"/>
+            <point key="canvasLocation" x="921" y="18"/>
         </scene>
     </scenes>
 </document>

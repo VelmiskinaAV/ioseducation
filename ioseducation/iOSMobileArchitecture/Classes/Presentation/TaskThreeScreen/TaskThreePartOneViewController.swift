@@ -11,32 +11,33 @@ import UIKit
 class TaskThreePartOneViewController : UIViewController {
     
     @IBOutlet weak var label: UILabel!
-    
     var persone = HandingCustomerData()
+    var completionHandler: ((CustomerData) -> ())?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartThree") as! TaskThreePartThreeViewController
-        vc.completionHandler = { persone in
-        
-            self.label.text = """
-            \(persone?.returnFIO() ?? "")
-            \(persone?.returbDate() ?? "")
-            \(persone?.returnAdress() ?? "")
-            \(persone?.returnPhoneNumber() ?? "")
-            \(persone?.returnTodayDate() ?? "")
-            """        
+        label.text = """
+        \(persone.returnFIO())
+        \(persone.returbDate())
+        \(persone.returnAdress())
+        \(persone.returnPhoneNumber())
+        \(persone.returnTodayDate())
+        """
     }
-    present(vc, animated: true, completion: nil)
-}
     
     @IBAction func secondScreenButton(_ sender: Any) {
        
     }
     @IBAction func thirdScreenButton(_ sender: Any) {
-     
+        
+        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartThree") as! TaskThreePartThreeViewController
+        vc.oldPersone = persone
+        vc.completionHandler = { [weak self] data in
+            self?.persone = data
+        }
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

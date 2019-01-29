@@ -8,45 +8,40 @@
 
 import UIKit
 
-class TaskThreePartThreeViewController : UIViewController {
+class TaskThreePartThreeViewController: UIViewController {
      
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
     @IBOutlet weak var textFieldAdress: UITextField!
     @IBOutlet weak var textFieldPhoneNumber: UITextField!
     @IBOutlet weak var textFieldTodayDate: UITextField!
+
+    var oldPersone: HandingCustomerData?
     
-    var oldPersone = HandingCustomerData()
-       var completionHandler:(((HandingCustomerData)?) -> ())?
-   
+    var completionHandler: ((HandingCustomerData) -> ())?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        textFieldFIO.text = "\(oldPersone.returnFIO())"
-        textFieldDate.text = "\(oldPersone.returbDate())"
-        textFieldAdress.text = "\(oldPersone.returnAdress())"
-        textFieldPhoneNumber.text = "\(oldPersone.returnPhoneNumber())"
-        textFieldTodayDate.text = "\(oldPersone.returnTodayDate())"
+        textFieldFIO.text = "\(oldPersone?.returnFIO() ?? "")"
+        textFieldDate.text = "\(oldPersone?.returbDate() ?? "")"
+        textFieldAdress.text = "\(oldPersone?.returnAdress() ?? "")"
+        textFieldPhoneNumber.text = "\(oldPersone?.returnPhoneNumber() ?? "")"
+        textFieldTodayDate.text = "\(oldPersone?.returnTodayDate() ?? "")"
+    }
+
+    @IBAction func changeScreenButton(_ sender: Any) {       
+        
+        let data = CustomerData(fio: textFieldFIO.text,
+                                date: textFieldDate.text,
+                                adress: textFieldAdress.text,
+                                phoneNumber: textFieldPhoneNumber.text,
+                                todayDate: textFieldTodayDate.text)
+        let person = HandingCustomerData(data: data)
+        completionHandler?(person)
+        
+        navigationController?.popViewController(animated: true)
+        }
     }
  
 
-    var persone = CustomerData()
-    @IBAction func changeScreenButton(_ sender: Any) {
-
-        persone.fio = textFieldFIO.text
-        persone.date = textFieldDate.text
-        persone.adress = textFieldAdress.text
-        persone.phoneNumber = textFieldPhoneNumber.text
-        persone.todayDate = textFieldTodayDate.text
-        
-        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartOne") as! TaskThreePartOneViewController
-        // ??
-        
-        
-        
-        present(vc, animated: true, completion: nil)
-    }
- 
-}
