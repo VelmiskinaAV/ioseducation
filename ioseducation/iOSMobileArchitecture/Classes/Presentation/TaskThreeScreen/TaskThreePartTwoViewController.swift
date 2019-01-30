@@ -9,7 +9,12 @@
 import UIKit
 
 class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
-  
+    
+    var delegate: ButtonDelegate?
+    
+    func onButtonTap(data:(HandingCustomerData) -> ()) {
+        
+    }
     
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
@@ -19,8 +24,8 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
     
     var oldPersone = HandingCustomerData()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         textFieldFIO.text = "\(oldPersone.returnFIO())"
         textFieldDate.text = "\(oldPersone.returbDate())"
@@ -29,22 +34,18 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
         textFieldTodayDate.text = "\(oldPersone.returnTodayDate())"
     }
     
-    var persone = CustomerData()
-    
-    func onButtonTap(sender: UIButton) {
-        persone.fio = textFieldFIO.text
-        persone.date = textFieldDate.text
-        persone.adress = textFieldAdress.text
-        persone.phoneNumber = textFieldPhoneNumber.text
-        persone.todayDate = textFieldTodayDate.text
-    }
-    
-    
+    //var persone = CustomerData()
+
     @IBAction func changeScreenButton(_ sender: Any) {
-      
+        
+        let data = CustomerData(fio: textFieldFIO.text,
+                                date: textFieldDate.text,
+                                adress: textFieldAdress.text,
+                                phoneNumber: textFieldPhoneNumber.text,
+                                todayDate: textFieldTodayDate.text)
+        var person = HandingCustomerData(data: data)
+        delegate?.onButtonTap(data: person)
+        
         navigationController?.popViewController(animated: true)
     }
-    
-    //передать значения на 2 экран, разобраться с содержимым func onButtonTap(sender: UIButton) и передать значения со 2 экрана
-    
 }

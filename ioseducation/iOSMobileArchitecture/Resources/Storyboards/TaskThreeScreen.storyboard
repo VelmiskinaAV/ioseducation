@@ -30,7 +30,6 @@
                                 <state key="normal" title="Second Screen"/>
                                 <connections>
                                     <action selector="secondScreenButton:" destination="P9j-P0-s8k" eventType="touchUpInside" id="kQe-ut-laQ"/>
-                                    <segue destination="DUA-n6-9is" kind="show" id="hfB-ay-eSX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEQ-pF-v2i">

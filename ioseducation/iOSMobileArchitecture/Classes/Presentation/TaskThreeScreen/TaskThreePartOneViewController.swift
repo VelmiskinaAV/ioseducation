@@ -11,23 +11,27 @@ import UIKit
 class TaskThreePartOneViewController : UIViewController {
     
     @IBOutlet weak var label: UILabel!
-    var persone = HandingCustomerData()
+    var persone: HandingCustomerData?
     var completionHandler: ((CustomerData) -> ())?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         label.text = """
-        \(persone.returnFIO())
-        \(persone.returbDate())
-        \(persone.returnAdress())
-        \(persone.returnPhoneNumber())
-        \(persone.returnTodayDate())
+        \(persone?.returnFIO() ?? "")
+        \(persone?.returbDate() ?? "")
+        \(persone?.returnAdress() ?? "")
+        \(persone?.returnPhoneNumber() ?? "")
+        \(persone?.returnTodayDate() ?? "")
         """
     }
     
     @IBAction func secondScreenButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartTwo") as! TaskThreePartTwoViewController
+        
        
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func thirdScreenButton(_ sender: Any) {
         
@@ -37,7 +41,6 @@ class TaskThreePartOneViewController : UIViewController {
         vc.completionHandler = { [weak self] data in
             self?.persone = data
         }
-        
         navigationController?.pushViewController(vc, animated: true)
     }
 }
