@@ -9,5 +9,5 @@
 import UIKit
 
 protocol ButtonDelegate{
-    func onButtonTap(data: (HandingCustomerData) -> ())
+    func onButtonTap(data: (HandingCustomerData?))
 }

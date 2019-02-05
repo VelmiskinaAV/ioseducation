@@ -12,8 +12,8 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
     
     var delegate: ButtonDelegate?
     
-    func onButtonTap(data:(HandingCustomerData) -> ()) {
-        
+    func onButtonTap(data:(HandingCustomerData?)) {
+     
     }
     
     @IBOutlet weak var textFieldFIO: UITextField!
@@ -22,19 +22,17 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
     @IBOutlet weak var textFieldPhoneNumber: UITextField!
     @IBOutlet weak var textFieldTodayDate: UITextField!
     
-    var oldPersone = HandingCustomerData()
+    var oldPersone: HandingCustomerData?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        textFieldFIO.text = "\(oldPersone.returnFIO())"
-        textFieldDate.text = "\(oldPersone.returbDate())"
-        textFieldAdress.text = "\(oldPersone.returnAdress())"
-        textFieldPhoneNumber.text = "\(oldPersone.returnPhoneNumber())"
-        textFieldTodayDate.text = "\(oldPersone.returnTodayDate())"
+        textFieldFIO.text = "\(oldPersone?.returnFIO() ?? "")"
+        textFieldDate.text = "\(oldPersone?.returbDate() ?? "")"
+        textFieldAdress.text = "\(oldPersone?.returnAdress() ?? "")"
+        textFieldPhoneNumber.text = "\(oldPersone?.returnPhoneNumber() ?? "")"
+        textFieldTodayDate.text = "\(oldPersone?.returnTodayDate() ?? "")"
     }
-    
-    //var persone = CustomerData()
 
     @IBAction func changeScreenButton(_ sender: Any) {
         
@@ -43,7 +41,7 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
                                 adress: textFieldAdress.text,
                                 phoneNumber: textFieldPhoneNumber.text,
                                 todayDate: textFieldTodayDate.text)
-        var person = HandingCustomerData(data: data)
+        let person = HandingCustomerData(data: data)
         delegate?.onButtonTap(data: person)
         
         navigationController?.popViewController(animated: true)
