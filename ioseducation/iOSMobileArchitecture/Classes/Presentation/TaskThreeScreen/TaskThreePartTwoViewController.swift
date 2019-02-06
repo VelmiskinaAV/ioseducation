@@ -8,13 +8,9 @@
 
 import UIKit
 
-class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
+class TaskThreePartTwoViewController : UIViewController {
     
     var delegate: ButtonDelegate?
-    
-    func onButtonTap(data:(HandingCustomerData?)) {
-     
-    }
     
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
@@ -35,15 +31,15 @@ class TaskThreePartTwoViewController : UIViewController, ButtonDelegate {
     }
 
     @IBAction func changeScreenButton(_ sender: Any) {
-        
         let data = CustomerData(fio: textFieldFIO.text,
                                 date: textFieldDate.text,
                                 adress: textFieldAdress.text,
                                 phoneNumber: textFieldPhoneNumber.text,
                                 todayDate: textFieldTodayDate.text)
         let person = HandingCustomerData(data: data)
+        if delegate != nil {
         delegate?.onButtonTap(data: person)
-        
+        }
         navigationController?.popViewController(animated: true)
     }
 }
