@@ -10,8 +10,6 @@ import UIKit
 
 class TaskThreePartTwoViewController : UIViewController {
     
-    var delegate: ButtonDelegate?
-    
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
     @IBOutlet weak var textFieldAdress: UITextField!
@@ -19,6 +17,7 @@ class TaskThreePartTwoViewController : UIViewController {
     @IBOutlet weak var textFieldTodayDate: UITextField!
     
     var oldPersone: HandingCustomerData?
+    var delegate: ButtonDelegate?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,9 +36,7 @@ class TaskThreePartTwoViewController : UIViewController {
                                 phoneNumber: textFieldPhoneNumber.text,
                                 todayDate: textFieldTodayDate.text)
         let person = HandingCustomerData(data: data)
-        if delegate != nil {
         delegate?.onButtonTap(data: person)
-        }
         navigationController?.popViewController(animated: true)
     }
 }

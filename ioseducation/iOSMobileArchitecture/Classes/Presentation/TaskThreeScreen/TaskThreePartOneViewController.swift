@@ -15,16 +15,9 @@ class TaskThreePartOneViewController : UIViewController, ButtonDelegate {
     var completionHandler: ((CustomerData) -> ())?    
     
     func onButtonTap(data:(HandingCustomerData?)) {
-        print("all is ok")
+        persone = data
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        if segue.identifier == "TaskThreePartOne" {
-            let vc : TaskThreePartTwoViewController = segue.destination as! TaskThreePartTwoViewController
-            vc.delegate = self
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -41,7 +34,8 @@ class TaskThreePartOneViewController : UIViewController, ButtonDelegate {
         let storyboard = UIStoryboard(name: "TaskThreeScreen", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TaskThreePartTwo") as! TaskThreePartTwoViewController
         vc.oldPersone = persone
-
+        
+        vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
     
