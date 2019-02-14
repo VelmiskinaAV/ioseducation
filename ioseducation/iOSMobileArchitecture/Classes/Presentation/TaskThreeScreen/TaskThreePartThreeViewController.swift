@@ -41,7 +41,7 @@ class TaskThreePartThreeViewController: UIViewController {
         completionHandler?(person)
         
         navigationController?.popViewController(animated: true)
-        }
     }
+}
  
 

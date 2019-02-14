@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TaskThreePartTwoViewController : UIViewController {
+class TaskThreePartTwoViewController: UIViewController {
     
     @IBOutlet weak var textFieldFIO: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
