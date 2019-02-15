@@ -7,8 +7,6 @@
 //
 
 class RenaissanceSofa: CreateSofa {
-    override init(){
-        super.init()
-        self.sofaStyle = "Renaissance"
+    override func print(){
     }
 }

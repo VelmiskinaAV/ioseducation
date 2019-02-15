@@ -32,11 +32,11 @@ class TaskThreePartThreeViewController: UIViewController {
 
     @IBAction func changeScreenButton(_ sender: Any) {       
         
-        let data = CustomerData(fio: textFieldFIO.text,
-                                date: textFieldDate.text,
-                                adress: textFieldAdress.text,
-                                phoneNumber: textFieldPhoneNumber.text,
-                                todayDate: textFieldTodayDate.text)
+        let data = CustomerData(fio: textFieldFIO.text ?? "",
+                                date: textFieldDate.text ?? "",
+                                adress: textFieldAdress.text ?? "",
+                                phoneNumber: textFieldPhoneNumber.text ?? "",
+                                todayDate: textFieldTodayDate.text ?? "")
         let person = HandingCustomerData(data: data)
         completionHandler?(person)
         

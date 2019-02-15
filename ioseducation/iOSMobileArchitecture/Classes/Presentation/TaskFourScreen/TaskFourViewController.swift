@@ -6,4 +6,18 @@
 //  Copyright © 2019 Andrey Chernyshev. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TaskFourViewController : UIViewController{
+    
+    @IBOutlet weak var mainTableView: MainTableView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    var table = FurnitureFactory()
+    let factory = ModernTable()
+
+    
+}

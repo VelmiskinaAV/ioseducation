@@ -7,8 +7,6 @@
 //
 
 class RenaissanceTable: CreateTable{
-    override init(){
-        super.init()
-        self.tableStyle = "Renaissance"
+    override func print(){
     }
 }

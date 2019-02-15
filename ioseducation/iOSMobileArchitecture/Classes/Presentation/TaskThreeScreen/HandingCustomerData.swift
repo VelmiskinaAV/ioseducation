@@ -8,22 +8,26 @@
 
 class HandingCustomerData {
     
-    var persone: CustomerData
+    let persone: CustomerData
     
     func returnFIO() -> String {
-        return "\(persone.fio ?? "")"
-     }
-     func returbDate()->String {
-        return "\(persone.date ?? "")"
-     }
-     func returnAdress()->String {
-        return "\(persone.adress ?? "")"
-     }
-    func returnPhoneNumber()->String {
-        return "\(persone.phoneNumber ?? "")"
-     }
-    func returnTodayDate()->String {
-        return "\(persone.todayDate ?? "")"
+        return persone.fio
+    }
+    
+    func returbDate() -> String {
+        return persone.date
+    }
+    
+    func returnAdress() -> String {
+        return persone.adress
+    }
+    
+    func returnPhoneNumber() -> String {
+        return persone.phoneNumber
+    }
+    
+    func returnTodayDate() -> String {
+        return persone.todayDate
     }
 
     init(data: CustomerData? = nil) {

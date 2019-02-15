@@ -36,11 +36,16 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buc-iy-gNx">
-                                <rect key="frame" x="67" y="206" width="241" height="128"/>
+                                <rect key="frame" x="0.0" y="206" width="375" height="461"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moC-7O-WZd">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="0.0"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehj-QX-43B">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Ogx-sX-viq"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -48,12 +53,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Ehj-QX-43B" secondAttribute="trailing" id="1f9-Jm-g0S"/>
-                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="leading" secondItem="moC-7O-WZd" secondAttribute="leading" id="MaJ-IO-30b"/>
-                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="height" secondItem="moC-7O-WZd" secondAttribute="height" id="N0a-0f-Brr"/>
-                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="top" secondItem="moC-7O-WZd" secondAttribute="top" id="d3b-Iu-hbJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ehj-QX-43B" secondAttribute="bottom" id="hf3-VK-gqt"/>
-                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="width" secondItem="moC-7O-WZd" secondAttribute="width" id="hl1-iI-YMi"/>
+                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="top" secondItem="moC-7O-WZd" secondAttribute="top" id="Lhk-5L-Gil"/>
+                                            <constraint firstItem="Ehj-QX-43B" firstAttribute="leading" secondItem="moC-7O-WZd" secondAttribute="leading" id="OsU-OY-uDs"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ehj-QX-43B" secondAttribute="trailing" id="VNL-QK-gZg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ehj-QX-43B" secondAttribute="bottom" id="dL5-Yp-Ykk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -67,15 +70,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oS5-5H-yPQ" firstAttribute="trailing" secondItem="buc-iy-gNx" secondAttribute="trailing" id="CoB-iB-BbS"/>
                             <constraint firstItem="buc-iy-gNx" firstAttribute="centerX" secondItem="oS5-5H-yPQ" secondAttribute="centerX" id="D2R-sr-95z"/>
                             <constraint firstItem="EZK-nE-gYE" firstAttribute="top" secondItem="oS5-5H-yPQ" secondAttribute="top" constant="80" id="RSU-DA-xbw"/>
                             <constraint firstItem="bEQ-pF-v2i" firstAttribute="leading" secondItem="EZK-nE-gYE" secondAttribute="trailing" constant="40" id="bEB-rt-guA"/>
                             <constraint firstItem="oS5-5H-yPQ" firstAttribute="trailing" secondItem="bEQ-pF-v2i" secondAttribute="trailing" constant="40" id="lIJ-KA-WuN"/>
                             <constraint firstItem="buc-iy-gNx" firstAttribute="top" secondItem="oS5-5H-yPQ" secondAttribute="top" constant="142" id="lK7-og-ES5"/>
-                            <constraint firstItem="buc-iy-gNx" firstAttribute="leading" secondItem="oS5-5H-yPQ" secondAttribute="leading" constant="67" id="pBH-oz-bhM"/>
+                            <constraint firstItem="buc-iy-gNx" firstAttribute="leading" secondItem="oS5-5H-yPQ" secondAttribute="leading" id="pBH-oz-bhM"/>
                             <constraint firstItem="EZK-nE-gYE" firstAttribute="baseline" secondItem="bEQ-pF-v2i" secondAttribute="baseline" id="qeh-q8-hf0"/>
                             <constraint firstItem="EZK-nE-gYE" firstAttribute="leading" secondItem="oS5-5H-yPQ" secondAttribute="leading" constant="40" id="rxE-pr-OeX"/>
-                            <constraint firstItem="oS5-5H-yPQ" firstAttribute="bottom" secondItem="buc-iy-gNx" secondAttribute="bottom" constant="333" id="ymp-or-KpJ"/>
+                            <constraint firstItem="oS5-5H-yPQ" firstAttribute="bottom" secondItem="buc-iy-gNx" secondAttribute="bottom" id="ymp-or-KpJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oS5-5H-yPQ"/>
                     </view>

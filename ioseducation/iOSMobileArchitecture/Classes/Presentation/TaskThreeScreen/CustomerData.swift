@@ -7,9 +7,17 @@
 //
 
 struct CustomerData {
-    var fio: String?
-    var date: String?
-    var adress: String?
-    var phoneNumber: String?
-    var todayDate: String?
+    let fio: String
+    let date: String
+    let adress: String
+    let phoneNumber: String
+    let todayDate: String
+    
+    init(fio: String = "", date: String = "", adress: String = "", phoneNumber: String = "", todayDate: String = "") {
+        self.fio = fio
+        self.date = date
+        self.adress = adress
+        self.phoneNumber = phoneNumber
+        self.todayDate = todayDate        
+    }
 }
