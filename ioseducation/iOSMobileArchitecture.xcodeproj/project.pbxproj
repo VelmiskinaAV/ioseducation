@@ -23,19 +23,20 @@
 		AC5894552216DC5B00998D53 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894542216DC5B00998D53 /* DataCell.swift */; };
 		AC5894572216DC6700998D53 /* SeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894562216DC6700998D53 /* SeparatorCell.swift */; };
 		AC5894592216EA8B00998D53 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894582216EA8B00998D53 /* MainTableView.swift */; };
-		AC58945C2216F6FA00998D53 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58945B2216F6FA00998D53 /* Delegate.swift */; };
 		CE4987272209CBAC00A79620 /* TaskFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987262209CBAC00A79620 /* TaskFourViewController.swift */; };
 		CE4987292209CBD700A79620 /* TaskFourScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4987282209CBD700A79620 /* TaskFourScreen.storyboard */; };
-		CE49872B2209CE8900A79620 /* FurnitureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49872A2209CE8900A79620 /* FurnitureFactory.swift */; };
-		CE49872D2209CEC000A79620 /* CreateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49872C2209CEC000A79620 /* CreateTable.swift */; };
-		CE49872F2209CEEB00A79620 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49872E2209CEEB00A79620 /* CreateSofa.swift */; };
-		CE4987312209CF4600A79620 /* ModernTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987302209CF4600A79620 /* ModernTable.swift */; };
-		CE4987332209CF9E00A79620 /* RenaissanceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987322209CF9E00A79620 /* RenaissanceTable.swift */; };
-		CE4987352209CFDB00A79620 /* RenaissanceSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987342209CFDB00A79620 /* RenaissanceSofa.swift */; };
-		CE4987372209D01F00A79620 /* ModernSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987362209D01F00A79620 /* ModernSofa.swift */; };
-		CE4987392209D5A400A79620 /* TableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987382209D5A400A79620 /* TableFactory.swift */; };
-		CE49873C2209D5E600A79620 /* SofaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49873B2209D5E600A79620 /* SofaFactory.swift */; };
 		CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE731D352200A04B00B08E68 /* ButtonDelegate.swift */; };
+		CE75CFBD221ED97400A1EFB6 /* ChairProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFBC221ED97400A1EFB6 /* ChairProtocol.swift */; };
+		CE75CFBF221ED9CE00A1EFB6 /* TableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFBE221ED9CE00A1EFB6 /* TableProtocol.swift */; };
+		CE75CFC1221EDC4500A1EFB6 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFC0221EDC4500A1EFB6 /* AbstractFactory.swift */; };
+		CE75CFC7221EDD0400A1EFB6 /* RenaissanceChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFC6221EDD0400A1EFB6 /* RenaissanceChair.swift */; };
+		CE75CFC9221EDD1A00A1EFB6 /* RenaissanceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFC8221EDD1A00A1EFB6 /* RenaissanceTable.swift */; };
+		CE75CFCB221EDDA700A1EFB6 /* ModernChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFCA221EDDA700A1EFB6 /* ModernChair.swift */; };
+		CE75CFCD221EDDD300A1EFB6 /* ModernTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFCC221EDDD300A1EFB6 /* ModernTable.swift */; };
+		CE75CFCF221EE2BB00A1EFB6 /* ModernFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFCE221EE2BB00A1EFB6 /* ModernFactory.swift */; };
+		CE75CFD1221EE2DA00A1EFB6 /* RenaissanceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD0221EE2DA00A1EFB6 /* RenaissanceFactory.swift */; };
+		CE75CFD4221EECF200A1EFB6 /* MainTableElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */; };
+		CE75CFD6221EF31E00A1EFB6 /* TitleDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD5221EF31E00A1EFB6 /* TitleDataCell.swift */; };
 		FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */; };
 		FACF29BB21CA6FEF00492B35 /* TaskOneScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */; };
 		FACF29BF21CA895200492B35 /* TaskTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */; };
@@ -70,19 +71,20 @@
 		AC5894542216DC5B00998D53 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		AC5894562216DC6700998D53 /* SeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorCell.swift; sourceTree = "<group>"; };
 		AC5894582216EA8B00998D53 /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
-		AC58945B2216F6FA00998D53 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		CE4987262209CBAC00A79620 /* TaskFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFourViewController.swift; sourceTree = "<group>"; };
 		CE4987282209CBD700A79620 /* TaskFourScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFourScreen.storyboard; sourceTree = "<group>"; };
-		CE49872A2209CE8900A79620 /* FurnitureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureFactory.swift; sourceTree = "<group>"; };
-		CE49872C2209CEC000A79620 /* CreateTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTable.swift; sourceTree = "<group>"; };
-		CE49872E2209CEEB00A79620 /* CreateSofa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
-		CE4987302209CF4600A79620 /* ModernTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernTable.swift; sourceTree = "<group>"; };
-		CE4987322209CF9E00A79620 /* RenaissanceTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceTable.swift; sourceTree = "<group>"; };
-		CE4987342209CFDB00A79620 /* RenaissanceSofa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceSofa.swift; sourceTree = "<group>"; };
-		CE4987362209D01F00A79620 /* ModernSofa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSofa.swift; sourceTree = "<group>"; };
-		CE4987382209D5A400A79620 /* TableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFactory.swift; sourceTree = "<group>"; };
-		CE49873B2209D5E600A79620 /* SofaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaFactory.swift; sourceTree = "<group>"; };
 		CE731D352200A04B00B08E68 /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
+		CE75CFBC221ED97400A1EFB6 /* ChairProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairProtocol.swift; sourceTree = "<group>"; };
+		CE75CFBE221ED9CE00A1EFB6 /* TableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProtocol.swift; sourceTree = "<group>"; };
+		CE75CFC0221EDC4500A1EFB6 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		CE75CFC6221EDD0400A1EFB6 /* RenaissanceChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceChair.swift; sourceTree = "<group>"; };
+		CE75CFC8221EDD1A00A1EFB6 /* RenaissanceTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceTable.swift; sourceTree = "<group>"; };
+		CE75CFCA221EDDA700A1EFB6 /* ModernChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernChair.swift; sourceTree = "<group>"; };
+		CE75CFCC221EDDD300A1EFB6 /* ModernTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernTable.swift; sourceTree = "<group>"; };
+		CE75CFCE221EE2BB00A1EFB6 /* ModernFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernFactory.swift; sourceTree = "<group>"; };
+		CE75CFD0221EE2DA00A1EFB6 /* RenaissanceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceFactory.swift; sourceTree = "<group>"; };
+		CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableElements.swift; sourceTree = "<group>"; };
+		CE75CFD5221EF31E00A1EFB6 /* TitleDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDataCell.swift; sourceTree = "<group>"; };
 		FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOneViewController.swift; sourceTree = "<group>"; };
 		FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskOneScreen.storyboard; sourceTree = "<group>"; };
 		FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController.swift; sourceTree = "<group>"; };
@@ -236,10 +238,12 @@
 			isa = PBXGroup;
 			children = (
 				96B0E7AC21B0086D001AD6FF /* TaskFour */,
+				CE75CFC5221EDCAA00A1EFB6 /* RenaissanceFurniture */,
+				CE75CFC4221EDC9D00A1EFB6 /* ModernFurniture */,
+				CE75CFBB221ED94900A1EFB6 /* Protocol */,
 				AC58945A2216ED2000998D53 /* AbstractFactory */,
 				AC5894512216DBBB00998D53 /* TableCells */,
 				CE4987262209CBAC00A79620 /* TaskFourViewController.swift */,
-				AC5894582216EA8B00998D53 /* MainTableView.swift */,
 			);
 			path = TaskFourScreen;
 			sourceTree = "<group>";
@@ -255,9 +259,12 @@
 		AC5894512216DBBB00998D53 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				CE75CFD2221EECAD00A1EFB6 /* Elements */,
+				AC5894582216EA8B00998D53 /* MainTableView.swift */,
 				AC5894522216DC5100998D53 /* TitleCell.swift */,
 				AC5894542216DC5B00998D53 /* DataCell.swift */,
 				AC5894562216DC6700998D53 /* SeparatorCell.swift */,
+				CE75CFD5221EF31E00A1EFB6 /* TitleDataCell.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -265,18 +272,46 @@
 		AC58945A2216ED2000998D53 /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
-				CE49872A2209CE8900A79620 /* FurnitureFactory.swift */,
-				CE49872C2209CEC000A79620 /* CreateTable.swift */,
-				CE49872E2209CEEB00A79620 /* CreateSofa.swift */,
-				CE4987302209CF4600A79620 /* ModernTable.swift */,
-				CE4987362209D01F00A79620 /* ModernSofa.swift */,
-				CE4987322209CF9E00A79620 /* RenaissanceTable.swift */,
-				CE4987342209CFDB00A79620 /* RenaissanceSofa.swift */,
-				CE4987382209D5A400A79620 /* TableFactory.swift */,
-				CE49873B2209D5E600A79620 /* SofaFactory.swift */,
-				AC58945B2216F6FA00998D53 /* Delegate.swift */,
+				CE75CFC0221EDC4500A1EFB6 /* AbstractFactory.swift */,
+				CE75CFCE221EE2BB00A1EFB6 /* ModernFactory.swift */,
+				CE75CFD0221EE2DA00A1EFB6 /* RenaissanceFactory.swift */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		CE75CFBB221ED94900A1EFB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE75CFBC221ED97400A1EFB6 /* ChairProtocol.swift */,
+				CE75CFBE221ED9CE00A1EFB6 /* TableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CE75CFC4221EDC9D00A1EFB6 /* ModernFurniture */ = {
+			isa = PBXGroup;
+			children = (
+				CE75CFCA221EDDA700A1EFB6 /* ModernChair.swift */,
+				CE75CFCC221EDDD300A1EFB6 /* ModernTable.swift */,
+			);
+			path = ModernFurniture;
+			sourceTree = "<group>";
+		};
+		CE75CFC5221EDCAA00A1EFB6 /* RenaissanceFurniture */ = {
+			isa = PBXGroup;
+			children = (
+				CE75CFC6221EDD0400A1EFB6 /* RenaissanceChair.swift */,
+				CE75CFC8221EDD1A00A1EFB6 /* RenaissanceTable.swift */,
+			);
+			path = RenaissanceFurniture;
+			sourceTree = "<group>";
+		};
+		CE75CFD2221EECAD00A1EFB6 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,33 +397,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF9D5B221CD067400F34E3C /* CustomerData.swift in Sources */,
-				CE4987332209CF9E00A79620 /* RenaissanceTable.swift in Sources */,
 				FAF9D5B021CD058B00F34E3C /* TaskThreePartThreeViewController.swift in Sources */,
 				FACF29C521CA8C0800492B35 /* ChairElement.swift in Sources */,
+				CE75CFCF221EE2BB00A1EFB6 /* ModernFactory.swift in Sources */,
 				FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */,
-				CE49872F2209CEEB00A79620 /* CreateSofa.swift in Sources */,
-				CE49873C2209D5E600A79620 /* SofaFactory.swift in Sources */,
 				FAF9D5AC21CD054A00F34E3C /* TaskThreePartOneViewController.swift in Sources */,
 				FAF9D5B621CD11E000F34E3C /* HandingCustomerData.swift in Sources */,
+				CE75CFC1221EDC4500A1EFB6 /* AbstractFactory.swift in Sources */,
+				CE75CFD4221EECF200A1EFB6 /* MainTableElements.swift in Sources */,
+				CE75CFCD221EDDD300A1EFB6 /* ModernTable.swift in Sources */,
 				CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */,
+				CE75CFCB221EDDA700A1EFB6 /* ModernChair.swift in Sources */,
+				CE75CFBD221ED97400A1EFB6 /* ChairProtocol.swift in Sources */,
+				CE75CFBF221ED9CE00A1EFB6 /* TableProtocol.swift in Sources */,
 				9609993121998CAB006B6D62 /* AppDelegate.swift in Sources */,
-				CE49872D2209CEC000A79620 /* CreateTable.swift in Sources */,
+				CE75CFD6221EF31E00A1EFB6 /* TitleDataCell.swift in Sources */,
 				AC5894532216DC5100998D53 /* TitleCell.swift in Sources */,
+				CE75CFC7221EDD0400A1EFB6 /* RenaissanceChair.swift in Sources */,
 				FACF29C721CA8C4200492B35 /* FurnitureProtocol.swift in Sources */,
 				FAF9D5AE21CD057200F34E3C /* TaskThreePartTwoViewController.swift in Sources */,
-				CE4987352209CFDB00A79620 /* RenaissanceSofa.swift in Sources */,
 				FACF29C321CA8BD500492B35 /* TableElement.swift in Sources */,
 				AC5894572216DC6700998D53 /* SeparatorCell.swift in Sources */,
 				AC5894592216EA8B00998D53 /* MainTableView.swift in Sources */,
-				CE4987392209D5A400A79620 /* TableFactory.swift in Sources */,
 				AC5894552216DC5B00998D53 /* DataCell.swift in Sources */,
+				CE75CFC9221EDD1A00A1EFB6 /* RenaissanceTable.swift in Sources */,
 				CE4987272209CBAC00A79620 /* TaskFourViewController.swift in Sources */,
+				CE75CFD1221EE2DA00A1EFB6 /* RenaissanceFactory.swift in Sources */,
 				FACF29BF21CA895200492B35 /* TaskTwoViewController.swift in Sources */,
-				CE4987372209D01F00A79620 /* ModernSofa.swift in Sources */,
-				AC58945C2216F6FA00998D53 /* Delegate.swift in Sources */,
-				CE49872B2209CE8900A79620 /* FurnitureFactory.swift in Sources */,
 				9663320821C8E27D004ABCA2 /* TaskSixProtocol.swift in Sources */,
-				CE4987312209CF4600A79620 /* ModernTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

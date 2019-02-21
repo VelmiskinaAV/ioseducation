@@ -13,11 +13,12 @@ class TaskFourViewController : UIViewController{
     @IBOutlet weak var mainTableView: MainTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let chair = ModernChair()
+        let str = chair.returnColor(color: chair.color)
+        print(str)
     }
     
-    var table = FurnitureFactory()
-    let factory = ModernTable()
+    
 
     
 }
