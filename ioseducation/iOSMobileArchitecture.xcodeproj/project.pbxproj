@@ -23,6 +23,8 @@
 		AC5894552216DC5B00998D53 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894542216DC5B00998D53 /* DataCell.swift */; };
 		AC5894572216DC6700998D53 /* SeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894562216DC6700998D53 /* SeparatorCell.swift */; };
 		AC5894592216EA8B00998D53 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5894582216EA8B00998D53 /* MainTableView.swift */; };
+		CE035C4122256F0C00DC681C /* TableElementsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE035C4022256F0C00DC681C /* TableElementsMapper.swift */; };
+		CE035C432225833500DC681C /* ListOfFurniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE035C422225833500DC681C /* ListOfFurniture.swift */; };
 		CE4987272209CBAC00A79620 /* TaskFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4987262209CBAC00A79620 /* TaskFourViewController.swift */; };
 		CE4987292209CBD700A79620 /* TaskFourScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4987282209CBD700A79620 /* TaskFourScreen.storyboard */; };
 		CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE731D352200A04B00B08E68 /* ButtonDelegate.swift */; };
@@ -71,6 +73,8 @@
 		AC5894542216DC5B00998D53 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		AC5894562216DC6700998D53 /* SeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorCell.swift; sourceTree = "<group>"; };
 		AC5894582216EA8B00998D53 /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		CE035C4022256F0C00DC681C /* TableElementsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableElementsMapper.swift; sourceTree = "<group>"; };
+		CE035C422225833500DC681C /* ListOfFurniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFurniture.swift; sourceTree = "<group>"; };
 		CE4987262209CBAC00A79620 /* TaskFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFourViewController.swift; sourceTree = "<group>"; };
 		CE4987282209CBD700A79620 /* TaskFourScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFourScreen.storyboard; sourceTree = "<group>"; };
 		CE731D352200A04B00B08E68 /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
@@ -238,12 +242,12 @@
 			isa = PBXGroup;
 			children = (
 				96B0E7AC21B0086D001AD6FF /* TaskFour */,
+				CE4987262209CBAC00A79620 /* TaskFourViewController.swift */,
 				CE75CFC5221EDCAA00A1EFB6 /* RenaissanceFurniture */,
 				CE75CFC4221EDC9D00A1EFB6 /* ModernFurniture */,
 				CE75CFBB221ED94900A1EFB6 /* Protocol */,
 				AC58945A2216ED2000998D53 /* AbstractFactory */,
 				AC5894512216DBBB00998D53 /* TableCells */,
-				CE4987262209CBAC00A79620 /* TaskFourViewController.swift */,
 			);
 			path = TaskFourScreen;
 			sourceTree = "<group>";
@@ -310,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */,
+				CE035C4022256F0C00DC681C /* TableElementsMapper.swift */,
+				CE035C422225833500DC681C /* ListOfFurniture.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				CE75CFC1221EDC4500A1EFB6 /* AbstractFactory.swift in Sources */,
 				CE75CFD4221EECF200A1EFB6 /* MainTableElements.swift in Sources */,
 				CE75CFCD221EDDD300A1EFB6 /* ModernTable.swift in Sources */,
+				CE035C432225833500DC681C /* ListOfFurniture.swift in Sources */,
 				CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */,
 				CE75CFCB221EDDA700A1EFB6 /* ModernChair.swift in Sources */,
 				CE75CFBD221ED97400A1EFB6 /* ChairProtocol.swift in Sources */,
@@ -424,6 +431,7 @@
 				CE4987272209CBAC00A79620 /* TaskFourViewController.swift in Sources */,
 				CE75CFD1221EE2DA00A1EFB6 /* RenaissanceFactory.swift in Sources */,
 				FACF29BF21CA895200492B35 /* TaskTwoViewController.swift in Sources */,
+				CE035C4122256F0C00DC681C /* TableElementsMapper.swift in Sources */,
 				9663320821C8E27D004ABCA2 /* TaskSixProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
