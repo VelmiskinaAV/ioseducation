@@ -8,31 +8,33 @@
 
 class TableElementsMapper {
     
-   /* static func map(modernTable: ModernTable, modernChair: ModernChair, renChair: RenaissanceChair, renTable: RenaissanceTable ) -> [AbsrtactFactory] {
-        var result: [AbstractFactory] = []
+    static func map(list: [Any]) -> [MainTableElements] {
+        var result: [MainTableElements] = []
         
-        /*result.append(.titleCell("Chair"))
-        result.append(.separatorCell)
-        result.append(.titleDataCell("Style", "Color", "Price"))
-        result.append(.separatorCell)
-        //let chairModern = ModernChair()
-        result.append(.dataCell(chairModern.name, chairModern.color, chairModern.price))
-        result.append(.separatorCell)
-        let chairRen = RenaissanceChair()
-        result.append(.dataCell(chairRen.name, chairRen.color, chairRen.price))
-        result.append(.separatorCell)
-        
-        result.append(.titleCell("Table"))
-        result.append(.separatorCell)
-        result.append(.titleDataCell("Style", "Color", "Price"))
-        result.append(.separatorCell)
-        let tableModern = ModernTable()
-        result.append(.dataCell(modernTable.name, modernTable.color, modernTable.price))
-        result.append(.separatorCell)
-        let tableRen = RenaissanceTable()
-        result.append(.dataCell(tableRen.name, tableRen.color, tableRen.price))
-        result.append(.separatorCell)*/
+        list.forEach { furniture in
+            if let chair = (furniture as? ChairProtocol) {
+                result.append(.titleCell(chair.type))
+                result.append(.separatorCell)
+                result.append(.titleCell(chair.style))
+                result.append(.separatorCell)
+                result.append(.titleDataCell("Name", "Color", "Price"))
+                result.append(.separatorCell)
+                result.append(.dataCell(chair.name, chair.color, chair.price))
+                result.append(.separatorCell)
+            } else {
+                if let table = (furniture as? TableProtocol) {
+                    result.append(.titleCell(table.type))
+                    result.append(.separatorCell)
+                    result.append(.titleCell(table.style))
+                    result.append(.separatorCell)
+                    result.append(.titleDataCell("Style", "Color", "Price"))
+                    result.append(.separatorCell)
+                    result.append(.dataCell(table.name, table.color, table.price))
+                    result.append(.separatorCell)
+                }
+            }
+        }
         
         return result
-    }*/
+    }
 }

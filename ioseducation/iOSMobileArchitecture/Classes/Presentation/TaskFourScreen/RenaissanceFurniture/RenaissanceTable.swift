@@ -7,6 +7,7 @@
 //
 
 class RenaissanceTable: TableProtocol {
+    var type: String = "Table"
     var style: String = "Renaissance"
     var name: String = "Table Gorger"
     var color: String = "Maroon"

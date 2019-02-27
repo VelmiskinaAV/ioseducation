@@ -17,11 +17,11 @@ class MainTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _elements.count
+        return furniture.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let element = _elements[indexPath.row]
+        let element = furniture[indexPath.row]
         
         switch element {
         case .titleCell(let title):
@@ -48,14 +48,5 @@ class MainTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    fileprivate var _elements: [MainTableElements] = []
+     var furniture: [MainTableElements] = []
 }
-
-/*extension Reactive where Base: IteamsTableView {
-    var elements: Binder<[MainTableElements]> {
-        return Binder(base) { base, elements in
-            base._elements = elements
-            base.reloadData()
-        }
-    }
-}*/

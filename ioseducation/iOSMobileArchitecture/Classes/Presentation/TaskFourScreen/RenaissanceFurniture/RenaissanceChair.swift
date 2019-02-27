@@ -7,6 +7,7 @@
 //
 
 class RenaissanceChair: ChairProtocol {
+    var type: String = "Chair"
     var style: String = "Renaissance"
     var name: String = "Chair Kate"
     var color: String = "Maroon"
