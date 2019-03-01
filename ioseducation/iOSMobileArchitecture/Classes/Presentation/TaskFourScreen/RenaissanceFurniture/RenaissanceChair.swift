@@ -7,11 +7,17 @@
 //
 
 class RenaissanceChair: ChairProtocol {
-    var type: String = "Chair"
-    var style: String = "Renaissance"
-    var name: String = "Chair Kate"
-    var color: String = "Maroon"
-    var price: Double = 120
+    let type: String
+    let style: String
+    let name: String
+    let color: String
+    let price: Double
     
-
+    init() {
+        type = "Chair"
+        style = "Renaissance"
+        name = "Chair Kate"
+        color = "Maroon"
+        price = 120
+    }
 }

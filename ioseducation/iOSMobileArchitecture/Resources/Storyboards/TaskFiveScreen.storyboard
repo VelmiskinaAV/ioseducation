@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NZq-Oz-jQd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Five View Controller-->
+        <scene sceneID="RpX-8E-dM8">
+            <objects>
+                <viewController id="NZq-Oz-jQd" customClass="TaskFiveViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfX-rt-Owl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ofa-eK-1Z8">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c3-eb-nzV">
+                                <rect key="frame" x="100" y="90" width="175" height="33"/>
+                                <state key="normal" title="Start Generation">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="NZq-Oz-jQd" eventType="touchUpInside" id="Fac-de-hng"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-RG-yFH">
+                                <rect key="frame" x="0.0" y="143" width="375" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oyM-sW-O6Z" firstAttribute="trailing" secondItem="7c3-eb-nzV" secondAttribute="trailing" constant="100" id="KOh-au-C2M"/>
+                            <constraint firstItem="ofa-eK-1Z8" firstAttribute="top" secondItem="oyM-sW-O6Z" secondAttribute="top" constant="303" id="MwB-H8-cZV"/>
+                            <constraint firstItem="ofa-eK-1Z8" firstAttribute="top" secondItem="7c3-eb-nzV" secondAttribute="bottom" constant="200" id="POa-ZB-Gtz"/>
+                            <constraint firstItem="7c3-eb-nzV" firstAttribute="top" secondItem="oyM-sW-O6Z" secondAttribute="top" constant="70" id="c7p-Jo-Qs9"/>
+                            <constraint firstItem="ofa-eK-1Z8" firstAttribute="leading" secondItem="oyM-sW-O6Z" secondAttribute="leading" constant="177" id="eFM-DM-N7V"/>
+                            <constraint firstItem="ofa-eK-1Z8" firstAttribute="top" secondItem="Ca7-RG-yFH" secondAttribute="bottom" constant="20" id="ezX-Jw-0z6"/>
+                            <constraint firstItem="Ca7-RG-yFH" firstAttribute="leading" secondItem="oyM-sW-O6Z" secondAttribute="leading" id="hoY-gm-EaY"/>
+                            <constraint firstItem="Ca7-RG-yFH" firstAttribute="top" secondItem="7c3-eb-nzV" secondAttribute="bottom" constant="20" id="mZR-Mc-U6p"/>
+                            <constraint firstItem="oyM-sW-O6Z" firstAttribute="trailing" secondItem="Ca7-RG-yFH" secondAttribute="trailing" id="qN4-9f-cRJ"/>
+                            <constraint firstItem="oyM-sW-O6Z" firstAttribute="bottom" secondItem="ofa-eK-1Z8" secondAttribute="bottom" constant="324" id="tZb-cA-ILG"/>
+                            <constraint firstItem="7c3-eb-nzV" firstAttribute="leading" secondItem="oyM-sW-O6Z" secondAttribute="leading" constant="100" id="ugw-VP-YEM"/>
+                            <constraint firstItem="oyM-sW-O6Z" firstAttribute="trailing" secondItem="ofa-eK-1Z8" secondAttribute="trailing" constant="178" id="wkb-ST-hBF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oyM-sW-O6Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ca7-RG-yFH" id="qTL-mc-lZD"/>
+                        <outlet property="loading" destination="ofa-eK-1Z8" id="kBh-fs-A4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86g-QD-f1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="160"/>
+        </scene>
+    </scenes>
+</document>

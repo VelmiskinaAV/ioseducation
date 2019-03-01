@@ -39,6 +39,14 @@
 		CE75CFD1221EE2DA00A1EFB6 /* RenaissanceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD0221EE2DA00A1EFB6 /* RenaissanceFactory.swift */; };
 		CE75CFD4221EECF200A1EFB6 /* MainTableElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */; };
 		CE75CFD6221EF31E00A1EFB6 /* TitleDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75CFD5221EF31E00A1EFB6 /* TitleDataCell.swift */; };
+		CECE88F922292FF1007824D7 /* TaskFiveScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE88F822292FF1007824D7 /* TaskFiveScreen.storyboard */; };
+		CECE88FB22293822007824D7 /* ListOfEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE88FA22293822007824D7 /* ListOfEmotions.swift */; };
+		CECE88FD2229389C007824D7 /* GenerationOfEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE88FC2229389C007824D7 /* GenerationOfEmotions.swift */; };
+		CECE88FF22293C21007824D7 /* TaskFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE88FE22293C21007824D7 /* TaskFiveViewController.swift */; };
+		CECE89032229654D007824D7 /* TaskSevenScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE89022229654D007824D7 /* TaskSevenScreen.storyboard */; };
+		CECE890522296A17007824D7 /* TaskSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE890422296A17007824D7 /* TaskSevenViewController.swift */; };
+		CECE890B22296D30007824D7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CECE890A22296D2F007824D7 /* 1.jpg */; };
+		CECE890D22296D38007824D7 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CECE890C22296D38007824D7 /* 2.jpg */; };
 		FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */; };
 		FACF29BB21CA6FEF00492B35 /* TaskOneScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */; };
 		FACF29BF21CA895200492B35 /* TaskTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */; };
@@ -89,6 +97,14 @@
 		CE75CFD0221EE2DA00A1EFB6 /* RenaissanceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenaissanceFactory.swift; sourceTree = "<group>"; };
 		CE75CFD3221EECF200A1EFB6 /* MainTableElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableElements.swift; sourceTree = "<group>"; };
 		CE75CFD5221EF31E00A1EFB6 /* TitleDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDataCell.swift; sourceTree = "<group>"; };
+		CECE88F822292FF1007824D7 /* TaskFiveScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFiveScreen.storyboard; sourceTree = "<group>"; };
+		CECE88FA22293822007824D7 /* ListOfEmotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfEmotions.swift; sourceTree = "<group>"; };
+		CECE88FC2229389C007824D7 /* GenerationOfEmotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationOfEmotions.swift; sourceTree = "<group>"; };
+		CECE88FE22293C21007824D7 /* TaskFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFiveViewController.swift; sourceTree = "<group>"; };
+		CECE89022229654D007824D7 /* TaskSevenScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskSevenScreen.storyboard; sourceTree = "<group>"; };
+		CECE890422296A17007824D7 /* TaskSevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSevenViewController.swift; sourceTree = "<group>"; };
+		CECE890A22296D2F007824D7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		CECE890C22296D38007824D7 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		FACF29AE21CA666A00492B35 /* TaskOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOneViewController.swift; sourceTree = "<group>"; };
 		FACF29BA21CA6FEF00492B35 /* TaskOneScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskOneScreen.storyboard; sourceTree = "<group>"; };
 		FACF29BE21CA895200492B35 /* TaskTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +184,8 @@
 				FACF29C021CA896600492B35 /* TaskTwoScreen.storyboard */,
 				FAF9D5A921CD037000F34E3C /* TaskThreeScreen.storyboard */,
 				CE4987282209CBD700A79620 /* TaskFourScreen.storyboard */,
+				CECE88F822292FF1007824D7 /* TaskFiveScreen.storyboard */,
+				CECE89022229654D007824D7 /* TaskSevenScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -198,7 +216,10 @@
 		9663320921C8E32A004ABCA2 /* TaskSevenScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CECE890A22296D2F007824D7 /* 1.jpg */,
+				CECE890C22296D38007824D7 /* 2.jpg */,
 				9663320A21C8E39C004ABCA2 /* TaskSeven */,
+				CECE890422296A17007824D7 /* TaskSevenViewController.swift */,
 			);
 			path = TaskSevenScreen;
 			sourceTree = "<group>";
@@ -256,6 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				96B0E7AF21B00CAF001AD6FF /* TaskFive */,
+				CECE88FE22293C21007824D7 /* TaskFiveViewController.swift */,
+				CECE88FA22293822007824D7 /* ListOfEmotions.swift */,
+				CECE88FC2229389C007824D7 /* GenerationOfEmotions.swift */,
 			);
 			path = TaskFiveScreen;
 			sourceTree = "<group>";
@@ -381,12 +405,16 @@
 				9663320621C8E15C004ABCA2 /* TaskSix in Resources */,
 				9663320B21C8E39C004ABCA2 /* TaskSeven in Resources */,
 				96B0E7AA21AFFB34001AD6FF /* TaskThree in Resources */,
+				CECE88F922292FF1007824D7 /* TaskFiveScreen.storyboard in Resources */,
+				CECE890B22296D30007824D7 /* 1.jpg in Resources */,
 				FACF29BB21CA6FEF00492B35 /* TaskOneScreen.storyboard in Resources */,
+				CECE89032229654D007824D7 /* TaskSevenScreen.storyboard in Resources */,
 				FACF29C121CA896600492B35 /* TaskTwoScreen.storyboard in Resources */,
 				96B0E7A421AFD695001AD6FF /* TaskOne in Resources */,
 				9609995321998FFE006B6D62 /* LaunchScreen.storyboard in Resources */,
 				96B0E7AD21B0086D001AD6FF /* TaskFour in Resources */,
 				96B0E7B021B00CAF001AD6FF /* TaskFive in Resources */,
+				CECE890D22296D38007824D7 /* 2.jpg in Resources */,
 				FAF9D5AA21CD037000F34E3C /* TaskThreeScreen.storyboard in Resources */,
 				9609993821998CAD006B6D62 /* Assets.xcassets in Resources */,
 				96B0E7A121AFD413001AD6FF /* ReadMe in Resources */,
@@ -409,13 +437,17 @@
 				FACF29AF21CA666A00492B35 /* TaskOneViewController.swift in Sources */,
 				FAF9D5AC21CD054A00F34E3C /* TaskThreePartOneViewController.swift in Sources */,
 				FAF9D5B621CD11E000F34E3C /* HandingCustomerData.swift in Sources */,
+				CECE890522296A17007824D7 /* TaskSevenViewController.swift in Sources */,
 				CE75CFC1221EDC4500A1EFB6 /* AbstractFactory.swift in Sources */,
 				CE75CFD4221EECF200A1EFB6 /* MainTableElements.swift in Sources */,
+				CECE88FD2229389C007824D7 /* GenerationOfEmotions.swift in Sources */,
 				CE75CFCD221EDDD300A1EFB6 /* ModernTable.swift in Sources */,
 				CE035C432225833500DC681C /* ListOfFurniture.swift in Sources */,
 				CE731D362200A04B00B08E68 /* ButtonDelegate.swift in Sources */,
+				CECE88FF22293C21007824D7 /* TaskFiveViewController.swift in Sources */,
 				CE75CFCB221EDDA700A1EFB6 /* ModernChair.swift in Sources */,
 				CE75CFBD221ED97400A1EFB6 /* ChairProtocol.swift in Sources */,
+				CECE88FB22293822007824D7 /* ListOfEmotions.swift in Sources */,
 				CE75CFBF221ED9CE00A1EFB6 /* TableProtocol.swift in Sources */,
 				9609993121998CAB006B6D62 /* AppDelegate.swift in Sources */,
 				CE75CFD6221EF31E00A1EFB6 /* TitleDataCell.swift in Sources */,

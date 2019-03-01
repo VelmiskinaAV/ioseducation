@@ -8,8 +8,7 @@
 
 import UIKit
 
-class SeparatorCell: UITableViewCell{
+class SeparatorCell: UITableViewCell {
     
-    func bind(){
-    }
+    func bind() {}
 }

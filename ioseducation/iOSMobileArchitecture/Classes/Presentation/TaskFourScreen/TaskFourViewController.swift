@@ -14,20 +14,18 @@ class TaskFourViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let randomChair = Int.random(in: 5..<11)
-        let randomTable = Int.random(in: 5..<11)
-        let fabrica = ModernFactory()
-        let element = fabrica.createChair()
-        print(element.type)
-        
+        let randomChair = Int.random(in: 1..<4)
+        let randomTable = Int.random(in: 1..<4)
         
         var furniture: [Any] = []
         
-        for _ in 0..<randomChair {
-            furniture.append(element)
+        for _ in 0..<randomChair * 2 {
+            furniture.append(ModernFactory().createChair())
+            furniture.append(RenaissanceFactory().createChair())
         }
         for _ in 0..<randomTable {
-            furniture.append(element)
+            furniture.append(ModernFactory().createTable())
+            furniture.append(RenaissanceFactory().createTable())
         }
         
         mainTableView.furniture = TableElementsMapper.map(list: furniture)

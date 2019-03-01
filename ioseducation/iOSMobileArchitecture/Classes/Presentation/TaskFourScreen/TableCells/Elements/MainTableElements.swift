@@ -8,7 +8,7 @@
 
 enum MainTableElements {
     case titleCell(String) //title
-    case titleDataCell(String, String, String)//style, name, price
+    case titleDataCell(String, String, String) //style, name, price
     case dataCell(String, String, Double) //style, name, price
     case separatorCell
 }

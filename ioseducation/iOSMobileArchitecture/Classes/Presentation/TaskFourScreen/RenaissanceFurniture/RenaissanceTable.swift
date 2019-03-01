@@ -7,9 +7,17 @@
 //
 
 class RenaissanceTable: TableProtocol {
-    var type: String = "Table"
-    var style: String = "Renaissance"
-    var name: String = "Table Gorger"
-    var color: String = "Maroon"
-    var price: Double = 210
+    let type: String
+    let style: String
+    let name: String
+    let color: String
+    let price: Double
+    
+    init() {
+        type = "Table"
+        style = "Renaissance"
+        name = "Table Gorger"
+        color = "Maroon"
+        price = 210
+    }
 }

@@ -6,10 +6,18 @@
 //  Copyright © 2019 Andrey Chernyshev. All rights reserved.
 //
 
-class ModernChair: ChairProtocol {
-    var type: String = "Chair"
-    var style: String = "Modern"
-    var name: String = "Chair Marry"
-    var color: String = "Brown"
-    var price: Double = 150
+struct ModernChair: ChairProtocol {
+    let type: String
+    let style: String
+    let name: String
+    let color: String
+    let price: Double
+    
+    init() {
+        type = "Chair"
+        style = "Modern"
+        name = "Chair Marry"
+        color = "Brown"
+        price = 150
+    }
 }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TitleCell: UITableViewCell{
+class TitleCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
-    func bind(title: String){
+    func bind(title: String) {
         label.text = title
     }
 }

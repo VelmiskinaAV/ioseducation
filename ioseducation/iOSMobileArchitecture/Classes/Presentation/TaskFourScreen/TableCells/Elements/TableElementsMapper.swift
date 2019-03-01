@@ -21,17 +21,17 @@ class TableElementsMapper {
                 result.append(.separatorCell)
                 result.append(.dataCell(chair.name, chair.color, chair.price))
                 result.append(.separatorCell)
-            } else {
-                if let table = (furniture as? TableProtocol) {
-                    result.append(.titleCell(table.type))
-                    result.append(.separatorCell)
-                    result.append(.titleCell(table.style))
-                    result.append(.separatorCell)
-                    result.append(.titleDataCell("Style", "Color", "Price"))
-                    result.append(.separatorCell)
-                    result.append(.dataCell(table.name, table.color, table.price))
-                    result.append(.separatorCell)
-                }
+            }
+            
+            if let table = (furniture as? TableProtocol) {
+                result.append(.titleCell(table.type))
+                result.append(.separatorCell)
+                result.append(.titleCell(table.style))
+                result.append(.separatorCell)
+                result.append(.titleDataCell("Name", "Color", "Price"))
+                result.append(.separatorCell)
+                result.append(.dataCell(table.name, table.color, table.price))
+                result.append(.separatorCell)
             }
         }
         

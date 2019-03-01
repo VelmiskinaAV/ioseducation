@@ -6,10 +6,18 @@
 //  Copyright © 2019 Andrey Chernyshev. All rights reserved.
 //
 
-class ModernTable: TableProtocol {
-    var type: String = "Table"
-    var style: String = "Modern"
-    var name: String = "Table Piter"
-    var color: String = "Brown and white"
-    var price: Double = 250
+struct ModernTable: TableProtocol {
+    let type: String
+    let style: String
+    let name: String
+    let color: String
+    let price: Double
+    
+    init() {
+        type = "Table"
+        style = "Modern"
+        name = "Table Piter"
+        color = "Brown and white"
+        price = 250
+    }
 }

@@ -8,12 +8,13 @@
 
 import UIKit
 
-class TitleDataCell: UITableViewCell{
+class TitleDataCell: UITableViewCell {
     
     @IBOutlet weak var labelStyle: UILabel!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
-    func bind(style: String, name: String, price: String){
+    
+    func bind(style: String, name: String, price: String) {
          labelStyle.text = style 
          labelName.text = name
          labelPrice.text = price
